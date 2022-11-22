@@ -1,0 +1,888 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+
+/*GENÉRICAS*/
+
+.ptserif {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    color: #515151;
+}
+
+.ptserif-blanco {
+    font-family: 'PT Serif', serif;
+    color: #FFF;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+    color: #515151;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.lato-blanco {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.logo-olea {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+.enlace {
+    background-color: #7d8f28;
+    padding: 5px 30px;
+    box-sizing: border-box;
+
+    margin: 40px auto 0px auto;
+
+    text-decoration: none;
+    font-size: 15px;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.enlace-grande {
+    max-width: 400px;
+}
+
+.enlace-pequeno {
+    width: 200px;
+}
+
+.flecha {
+    width: 28px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.enlace:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #8e9b2f;
+}
+
+
+/*MENÚ*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+   height: 70px;
+    background-color: rgba(255, 255, 255, 0);
+   
+}
+
+nav {
+    display: none;
+
+    background-image: url(img/cab-index.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #515151;
+    width: 100%;
+    float: none;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+
+}
+
+nav ul li a:hover {
+    color: #848484;
+}
+
+.cont-nav {
+    position: absolute;
+    top: 50%;
+    height: 320px;
+    width: 300px;
+    margin-left: -150px;
+    left: 50%;
+    margin-top: -160px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.idiomas {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60px;
+    position: fixed;
+    top: 30px;
+    right: 70px;
+}
+
+.idiomas a {
+    width: 50%;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #515151;
+    font-size: 16px;
+}
+
+.idioma-activo {
+    text-decoration: underline !important;
+}
+
+.equis {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.hamburguesa {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+
+.cont-sec {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    vertical-align: center;
+    flex-flow: row wrap;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 46px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+}
+
+.blanco {
+    color: #FFF;
+}
+
+.gris {
+    color: #515151;
+}
+
+
+
+.uno p {
+    margin-top: 30px;
+}
+
+.padding {
+    padding: 5% 0px;
+}
+
+.marg-b-elab {
+    margin-bottom: 0px;
+}
+
+.marg-index,
+.marg-elab {
+    margin-top: 15%;
+}
+
+.marg-premium {
+    margin-top: 5%;
+}
+
+.marg15 {
+
+    margin-top: 15%;
+}
+
+.marg-menos15 {
+    margin-top: -15%;
+}
+
+.marg-menos5 {
+    margin-top: -5%;
+}
+
+.marg5 {
+
+    margin-top: 5%;
+}
+
+.marg30 {
+    margin-top: 30px;
+}
+
+.marg70 {
+    margin-top: 70px;
+}
+
+
+
+.uno {
+    order: 1;
+    width: 50%;
+
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+
+.dos {
+    order: 2;
+    width: 50%;
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+
+
+.tres {
+    order: 1;
+    width: 50%;
+
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+
+.cuatro {
+    order: 2;
+    width: 50%;
+    padding: 0px 5%;
+    box-sizing: border-box;
+
+}
+
+.cinco {
+    order: 1;
+    width: 50%;
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+
+.seis {
+    order: 2;
+    width: 50%;
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+
+.seis img {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.siete {
+    padding: 0px 5%;
+}
+
+
+.cont-sec img {
+    text-align: center;
+    margin: auto;
+    display: block;
+
+}
+
+.cab-index {
+    background-image: url(img/cab-index.jpg);
+
+}
+
+.cab-link-contacto {
+    background-image: url(img/fondo-link-contacto.jpg);
+}
+
+.cab-bot {
+    background-image: url(img/fondo-bot.jpg);
+}
+
+.cab-elab {
+     background-image: url(img/fondo-elab.jpg);
+}
+
+.cab-contacto {
+    background-image: url(img/fondo-contact.jpg);
+}
+
+.cabecera {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.seccion-blanco {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.seccion-negro {
+    background-image: url(img/fondo-botellas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.seccion-contacto {
+    background-image: url(img/fondo-contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.cont-img {
+    height: 620px;
+}
+
+.cont-aceitunas {
+    width: 500px;
+}
+
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.responsive2 {
+    height: 100%;
+    width: auto;
+}
+
+
+
+
+/*PREMIUM*/
+
+.cab-premium {
+
+    background-image: url(img/fondo-premium.jpg);
+
+}
+
+.cont-titulo {
+    max-width: 600px;
+    margin: 70px auto;
+    text-align: center;
+    padding: 0px 5%;
+}
+
+.eco {
+    max-width: 435px;
+    display: block;
+    margin: auto;
+}
+
+.cont-columnas {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0px auto 70px auto;
+}
+
+.columnas {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col {
+    width: 33.33%;
+    margin-bottom: 50px;
+}
+
+.col img {
+    display: block;
+    margin: auto;
+}
+
+.col p {
+    padding: 5% 5% 0px 5%;
+    height: 285px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.link-contacto {
+    background-image: url(img/fondo-premium2.jpg);
+    text-align: center;
+}
+
+.cont-link {
+    width: 600px;
+    margin: auto;
+    padding: 0px 5%;
+}
+
+
+
+/*OLIVAR*/
+
+.sec1-olivar {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.olivos {
+    width: 590px;
+}
+
+.fondo-olivar {
+    background-image: url(img/fondo-olivar.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.aceites {
+    width: 50%;
+    padding: 0px 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imgAceites {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.lista {
+    width: 75%;
+}
+
+.lista h3 {
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.lista ul {
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+
+/*ELABORACION*/
+
+.bot-aceitunas {
+    width: 600px;
+}
+
+
+/*BOTELLA*/
+
+.text-cab-bot {
+    max-width: 500px;
+    margin: auto;
+}
+
+.info-bot {
+    width: 350px;
+    margin: auto;
+}
+
+.cont-contacto-bot {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cont-link-contacto {
+
+    width: 50%;
+    padding: 0px 5%;
+    box-sizing: border-box;
+
+}
+
+.cont-link-contacto h3 {
+
+    margin-top: 50%;
+
+}
+
+.bot-contacto {
+    width: 100px;
+    margin: auto;
+}
+
+
+/*CONTACTO*/
+.datos-cont {
+    display: flex;
+    flex-flow: wrap row;
+   width: 300px;
+    margin: auto;
+}
+
+.icono {
+    width: 20%;
+}
+
+.dato {
+    width: 80%;
+    margin-top: -15px;
+}
+
+.dato p {
+    text-align: left;
+}
+
+.cont-contacto {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col-contacto {
+    width: 50%;
+    text-align: center;
+    padding: 10%;
+    box-sizing: border-box;
+}
+
+
+
+.campo {
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.textarea {
+     background-color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.enviar {
+    background-color: #7d8f28;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+      font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-color: #7d8f28;
+}
+
+.enviar:hover {
+    background-color: #95a32f;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    background-color: #575756;
+}
+
+.cont-footer {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 0px;
+}
+
+.cont-footer a {
+    width: 50%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.cont-footer img {
+    display: block;
+    margin: 0px auto 10px auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .uno {
+        order: 2;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .dos {
+        order: 1;
+        width: 100%;
+    }
+
+    .uno h2 {
+        font-size: 40px;
+    }
+
+    .cabecera {
+        height: auto;
+        padding: 15% 0px;
+        box-sizing: border-box;
+    }
+
+    .seccion-blanco {
+        height: auto;
+        padding: 15% 0px;
+        box-sizing: border-box;
+    }
+
+    .seccion-negro {
+        height: auto;
+        padding: 15% 0px;
+        box-sizing: border-box;
+    }
+
+    .seccion-contacto {
+        height: auto;
+        padding: 40% 0px;
+        box-sizing: border-box;
+    }
+
+    .cont-img {
+        height: 500px;
+    }
+
+    .tres {
+
+        width: 100%;
+        margin-top: 15%;
+
+    }
+
+    .cuatro {
+
+        width: 100%;
+        padding: 0px 5%;
+
+    }
+
+    .cinco {
+        order: 2;
+        width: 100%;
+        margin-top: 15%;
+
+    }
+
+    .seis {
+        order: 1;
+        width: 100%;
+
+    }
+    .cont-aceitunas {
+
+        margin: auto;
+    }
+
+    .marg-index {
+        margin-top: 150px;
+    }
+
+    /*PREMIUM*/
+    .col {
+        width: 100%;
+    margin-bottom: 100px;
+
+    }
+
+    .marg-premium {
+        margin-top: 15px;
+    }
+
+    /*    OLIVAR*/
+    .sec1-olivar {
+        height: auto;
+        padding: 10% 0px;
+    }
+
+    .aceites {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    /*    ELABORACION*/
+    .marg-elab {
+        margin-top: 15%;
+
+    }
+
+    .bot-aceitunas {
+        width: 500px;
+        margin: auto;
+    }
+
+    .marg-b-elab {
+        margin-bottom: -15%;
+    }
+
+    /*    BOTELLA*/
+    .info-bot {
+        width: 300px;
+
+    }
+    
+/*    CONTACTO*/
+    .col-contacto {
+    width: 100%;
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    
+/*    MENÚ*/
+    .menu {
+    background-color: rgba(246, 246, 246, 1);
+   
+}
+    
+    .logo-olea {
+        height: 50px;
+        width: 50px;
+        top: 10px;
+    }
+    
+    h1 {
+    font-size: 28px;
+    }
+    
+    h2 {
+    font-size: 28px;
+    }
+    
+    
+    .cont-img {
+        height: 342px;
+    }
+    
+     .marg-index {
+        margin-top: 10px;
+    }
+    
+
+    .cont-aceitunas {
+        width: 320px;
+
+    }
+    
+    
+
+    /*    PREMIUM*/
+    
+
+    /*    OLIVAR*/
+    .olivos {
+        width: 320px;
+
+    }
+    
+    .lista ul {
+        list-style-type: none;
+    }
+
+    /*    ELABORACION*/
+    .bot-aceitunas {
+        width: 300px;
+        margin: auto;
+    }
+
+   
+
+    /*    BOTELLA*/
+    .text-cab-bot {
+    padding: 0px 5%;
+    margin: 40px auto 0px auto;
+        
+}
+    
+    .cont-link-contacto {
+
+        width: 100%;
+        margin-bottom: 10%;
+
+    }
+    
+    .cont-link-contacto h3 {
+
+    margin-top: 5%;
+
+}
+
+
+}
